@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Malaysia | Shop Online with Free Shipping</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        shopee: '#ee4d2d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- Rest of the HTML content remains the same -->
+<body class="bg-gray-100 font-roboto">
+    <!-- Top Navigation -->
+    <nav class="bg-white shadow-sm text-sm">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex justify-between items-center">
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Seller Centre</a>
+                    <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Download</a>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gray-600">Follow us on</span>
+                        <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300 flex items-center group">
+                        <i class="far fa-bell mr-1 group-hover:scale-110 transition-transform duration-300"></i>
+                        <span>Notifications</span>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300 flex items-center group">
+                        <i class="far fa-question-circle mr-1 group-hover:scale-110 transition-transform duration-300"></i>
+                        <span>Help</span>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Sign Up</a>
+                    <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Log In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="bg-shopee py-4 sticky top-0 z-50 transition-transform duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-white text-3xl font-bold flex items-center hover:opacity-90 transition-opacity duration-300">
+                    <i class="fas fa-shopping-bag mr-2"></i>
+                    Shopee
+                </a>
+                <div class="flex-1 mx-16">
+                    <div class="relative group">
+                        <input type="text" 
+                               placeholder="Search for products, brands and shops" 
+                               class="w-full px-4 py-2.5 rounded-sm focus:outline-none search-input"
+                               autocomplete="off">
+                        <button class="absolute right-0 top-0 h-full px-6 bg-shopee text-white rounded-r-sm 
+                                     hover:opacity-90 transition-opacity duration-300 group-hover:bg-orange-600">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center text-white">
+                    <a href="#" class="px-4 relative hover:opacity-80 transition-opacity duration-300 group">
+                        <i class="fas fa-shopping-cart text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                        <span class="cart-badge animate-bounce">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Raya Banner -->
+        <div class="bg-gradient-to-r from-orange-500 to-red-600 rounded-lg p-8 mb-8 text-white text-center 
+                    shadow-lg transform hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+            <h1 class="text-4xl font-bold mb-6 tracking-wide animate-fadeIn">RAYA BERSAMA SHOPEE</h1>
+            <div class="flex justify-center space-x-6">
+                <div class="bg-blue-600 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-300 flex-1 max-w-xs 
+                            transform hover:-translate-y-1 group">
+                    <i class="fas fa-truck text-3xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                    <p class="font-bold text-xl mb-1">FREE SHIPPING</p>
+                    <p class="text-sm opacity-90">NO MIN. SPEND</p>
+                </div>
+                <div class="bg-purple-600 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-300 flex-1 max-w-xs 
+                            transform hover:-translate-y-1 group">
+                    <i class="fas fa-percent text-3xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                    <p class="font-bold text-xl mb-1">90% OFF</p>
+                    <p class="text-sm opacity-90">LOWEST PRICE GUARANTEED</p>
+                </div>
+                <div class="bg-red-600 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-300 flex-1 max-w-xs 
+                            transform hover:-translate-y-1 group">
+                    <i class="fas fa-coins text-3xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                    <p class="font-bold text-xl mb-1">100 MILLION</p>
+                    <p class="text-sm opacity-90">COINS RAYA GIVEAWAY</p>
+                </div>
+            </div>
+            <p class="mt-6 text-xl font-medium tracking-wide">13 MARCH - 31 MARCH 2025</p>
+        </div>
+
+        <!-- Categories -->
+        <div class="bg-white rounded-lg p-6 mb-8 shadow-md">
+            <h2 class="text-xl font-bold mb-6 text-gray-800">Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center transition-all duration-300
+                               hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50 hover:shadow-lg">
+                        <div class="text-shopee rounded-full p-4 bg-orange-100 mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-mobile-alt text-3xl"></i>
+                        </div>
+                        <span class="text-gray-700 group-hover:text-shopee transition-colors duration-300">Mobile & Gadgets</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center transition-all duration-300
+                               hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50 hover:shadow-lg">
+                        <div class="text-shopee rounded-full p-4 bg-orange-100 mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-tshirt text-3xl"></i>
+                        </div>
+                        <span class="text-gray-700 group-hover:text-shopee transition-colors duration-300">Fashion</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center transition-all duration-300
+                               hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50 hover:shadow-lg">
+                        <div class="text-shopee rounded-full p-4 bg-orange-100 mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-home text-3xl"></i>
+                        </div>
+                        <span class="text-gray-700 group-hover:text-shopee transition-colors duration-300">Home & Living</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center transition-all duration-300
+                               hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50 hover:shadow-lg">
+                        <div class="text-shopee rounded-full p-4 bg-orange-100 mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-heartbeat text-3xl"></i>
+                        </div>
+                        <span class="text-gray-700 group-hover:text-shopee transition-colors duration-300">Health & Beauty</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center transition-all duration-300
+                               hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50 hover:shadow-lg">
+                        <div class="text-shopee rounded-full p-4 bg-orange-100 mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-baby text-3xl"></i>
+                        </div>
+                        <span class="text-gray-700 group-hover:text-shopee transition-colors duration-300">Baby & Toys</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center transition-all duration-300
+                               hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50 hover:shadow-lg">
+                        <div class="text-shopee rounded-full p-4 bg-orange-100 mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-ellipsis-h text-3xl"></i>
+                        </div>
+                        <span class="text-gray-700 group-hover:text-shopee transition-colors duration-300">More</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-8 py-12 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4 text-gray-800">ABOUT SHOPEE</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Shopee Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Shopee Policies</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Shopee Mall</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Seller Centre</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300">Flash Deals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 text-gray-800">PAYMENT</h3>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300 flex items-center justify-center">
+                            <i class="fab fa-cc-visa text-2xl text-blue-600"></i>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300 flex items-center justify-center">
+                            <i class="fab fa-cc-mastercard text-2xl text-red-600"></i>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300 flex items-center justify-center">
+                            <i class="fas fa-money-bill-wave text-2xl text-green-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 text-gray-800">LOGISTICS</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300 flex items-center justify-center">
+                            <i class="fas fa-truck text-2xl text-shopee"></i>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300 flex items-center justify-center">
+                            <i class="fas fa-shipping-fast text-2xl text-shopee"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 text-gray-800">FOLLOW US</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-shopee transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-600">
+                <p>&copy; 2024 Shopee. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
